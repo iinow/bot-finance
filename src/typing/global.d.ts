@@ -47,6 +47,12 @@ declare namespace NodeJS {
     token: string
   }
 
+  type MongoDB = {
+    host: string
+    port: number
+    dbName: string
+  }
+
   interface ProcessEnv {
     server: Server
     redis: Redis
@@ -56,5 +62,6 @@ declare namespace NodeJS {
     jwtSecret: string
     influx: Influx
     discord: Discord
+    mongo: MongoDB
   }
 }

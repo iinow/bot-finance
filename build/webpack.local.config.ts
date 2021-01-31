@@ -48,6 +48,11 @@ const env: Env = {
   discord: {
     token: '',
   },
+  mongo: {
+    host: 'localhost',
+    port: 27017,
+    dbName: 'botF',
+  },
 }
 
 const config = smart({

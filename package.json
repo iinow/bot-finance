@@ -15,15 +15,21 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.19.2",
+    "axios": "^0.21.1",
     "discord.js": "^12.5.1",
     "graphql": "^15.5.0",
     "graphql-redis-subscriptions": "^2.3.1",
+    "moment": "^2.29.1",
     "mongodb": "^3.6.3",
+    "node-html-parser": "^2.1.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3",
     "type-graphql": "^1.1.1"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/moment": "^2.13.0",
+    "@types/mongodb": "^3.6.3",
     "@types/node": "^14.0.1",
     "@types/webpack": "^4.41.13",
     "@types/webpack-merge": "^4.1.5",

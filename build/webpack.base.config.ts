@@ -87,6 +87,12 @@ type Discord = {
   token: string
 }
 
+type MongoDB = {
+  host: string
+  port: number
+  dbName: string
+}
+
 export interface Env {
   server: Server
   redis: Redis
@@ -96,6 +102,7 @@ export interface Env {
   jwtSecret: string
   influx: Influx
   discord: Discord
+  mongo: MongoDB
 }
 
 export { config as baseConfig }
