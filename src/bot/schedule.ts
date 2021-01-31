@@ -1,9 +1,14 @@
-import { Client } from 'discord.js'
+import { Client, Channel } from 'discord.js'
 
 export function callDate(client: Client) {
   const textChannel = client.channels.cache
     .filter((channel) => channel.isText())
-    .find(channel => channel.name === 'fear-and-green')
-    
-    textChannel?.send(new Date().toString()
+    .find(
+      (channel: Channel & { name?: string }) =>
+        channel.name === 'fear-and-green'
+    )
+
+  if (textChannel?.isText()) {
+    textChannel?.send(new Date().toString())
+  }
 }
