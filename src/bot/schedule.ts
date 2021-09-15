@@ -30,9 +30,14 @@ export function callGreedAndFear(client: Client) {
   }
 
   getFearAndGreed().subscribe((data) => {
-    textChannel?.send(`
-      현재 공포 지수: ${data.fgi.now.value}
-      어제 공포 지수: ${data.fgi.previousClose.value}
-    `)
+    textChannel?.send(
+      `
+=========================
+현재 공포 지수: ${data.fgi.now.value}
+어제 공포 지수: ${data.fgi.previousClose.value}
+하하하하하핳....
+=========================
+      `
+    )
   })
 }

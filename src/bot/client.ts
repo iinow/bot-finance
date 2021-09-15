@@ -17,7 +17,7 @@ client.on('message', (msg) => {
 })
 
 // client.setImmediate(callGreedAndFear, client)
-client.setInterval(callGreedAndFear, 10000, client)
+client.setInterval(callGreedAndFear, 60 * 60 * 1000, client)
 // client.setInterval(
 //   (date: string) => {
 //     console.log(date)
